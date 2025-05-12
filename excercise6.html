@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="mn">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Exercise 6: Grid + Responsive Gap</title>
+
+  <style>
+
+    .grid-container {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 100px);
+
+      grid-template-rows: repeat(3, 100px);
+
+      justify-content: center;
+
+      margin: 50px;
+      gap: 30px;
+
+    }
+
+
+
+    .box {
+
+      background-color: green;
+
+      width: 100px;
+
+      height: 100px;
+
+    }
+
+
+
+    @media (max-width: 600px) {
+
+      .grid-container {
+
+        gap: 10px;
+
+      }
+
+    }
+
+    @media (max-width: 400px) {
+
+      .grid-container {
+
+        grid-template-columns: 1fr;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="grid-container">
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+  </div>
+
+</body>
+
+</html>
